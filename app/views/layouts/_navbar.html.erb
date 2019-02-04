@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-md navbar-light">
+
+  <a class="navbar-brand mr-4" id="nav-bar-logo" href="/"><strong>Surfs Up</strong></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="inline-form col-sm-8 ml-4 pl-4" action="/msw" method="get"></form>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <% if current_user.nil? %>
+          <%= link_to 'Sign In', new_user_session_path %>
+        <% else %>
+          <%= link_to 'Sign Out', destroy_user_session_path %>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</nav>

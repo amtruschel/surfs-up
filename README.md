@@ -1,24 +1,12 @@
-# README
+# Surf's Up
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+App to check local surf spots, add wish list destinations, etc.
 
-Things you may want to cover:
+To Do:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* ~~ Initial config ~~
+* ~~ Connect to MSW API for forecasting ~~
+* Add tests
+* Finish forecast visualization
+* Add ability for users to add wish list destinations
+* Add message board

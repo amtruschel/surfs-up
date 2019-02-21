@@ -18,11 +18,16 @@ gem 'uglifier', '>= 1.3.0'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'devise'
+
+# Use Fog-AWS to load photos to S3 bucket
+gem 'fog-aws'
+
 gem 'rest-client'
 gem 'news-api'
 gem 'oj'
-gem 'bootstrap'
 gem 'jquery-rails'
+gem 'popper_js'
+gem 'bootstrap'
 gem 'sprockets-rails'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -42,6 +47,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   gem 'pry'
   gem 'dotenv-rails'
+  gem 'factory_bot_rails'
 end
 
 group :development do

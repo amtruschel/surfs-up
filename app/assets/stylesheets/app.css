@@ -18,3 +18,7 @@
 .dropdown {
   font-size: large;
 }
+
+#flash-row {
+  border: 1px solid grey;
+}

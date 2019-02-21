@@ -2,7 +2,10 @@
 
 App to check local surf spots, add wish list destinations, etc.
 
-To Do:
+## Status
+Work in progress
+
+## To Do:
 
 * ~~Initial config~~
 * ~~Connect to MSW API for forecasting~~

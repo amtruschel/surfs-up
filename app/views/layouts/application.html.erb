@@ -12,8 +12,19 @@
     <%= render "layouts/navbar" %>
     <div class="container-fluid">
       <div class="row d-flex">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-10">
+        <div class="col-lg-2 text-center d-none d-lg-block">
+          <% if !GoogleNews.get_news.nil? %>
+            <p><strong>Surfing News</strong></p>
+            <ul class="list-group">
+              <% GoogleNews.get_news.each do |result| %>
+              <a href="<%= result.url %>" target="_blank" class="list-group-item list-group-item-action">
+                <li><%= result.title %></li>
+              </a>
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+        <div class="col-lg-8">
           <% flash.each do |key, value| %>
             <div class="flash <%= key %> alert alert-dismissible fade show align-middle" role="alert" id="flash-row">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -25,16 +36,15 @@
           <div class="row d-flex justify-content-center">
             <h1 id="page-title">Surfs Up</h1>
           </div>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center mb-2">
             <%= form_with url: get_surf_path do |f| %>
               <%= select_tag("surf_spot", options_for_select(@surf_spots), prompt: "Choose your spot...", class: 'dropdown', onchange: "this.form.submit();") %>
             <% end %>
           </div>
-          <br></br>
           <%= yield %>
           <br></br>
         </div>
-        <div class="col-lg-1"></div>
+        <div class="col-lg-2"></div>
       </div>
     </div>
   </body>

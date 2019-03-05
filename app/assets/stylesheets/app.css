@@ -21,4 +21,13 @@
 
 #flash-row {
   border: 1px solid grey;
+  background-color: #fcedfb;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  list-style: none;
 }

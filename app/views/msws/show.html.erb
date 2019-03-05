@@ -3,8 +3,8 @@
   <div class="col-lg-8 text-center">
     <a href="http://magicseaweed.com"><img src="https://im-1-uk.msw.ms/msw_powered_by.png"></a>
     <br></br>
-    <p><strong>Spot Name:</strong> <%= @surf_spot.spot_name %></p>
-    <p><strong>Wind:</strong><%= @results['wind']['speed'] %> mph <%= @results['wind']['compassDirection']%></p>
+    <p><strong>Spot Name: </strong> <%= @surf_spot.spot_name %></p>
+    <p><strong>Wind: </strong><%= @results['wind']['speed'] %> mph <%= @results['wind']['compassDirection']%></p>
     <p><strong>Swell Rating:</strong>
       <% @results['solidRating'].to_i.times do |star|%>
         <img src="http://cdnimages.magicseaweed.com/star_filled.png" />

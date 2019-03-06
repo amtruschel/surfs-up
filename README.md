@@ -10,7 +10,7 @@ Work in progress
 * ~~Initial config~~
 * ~~Connect to MSW API for forecasting~~
 * Add tests
-* Finish forecast visualization
+* ~~Finish forecast visualization~~
 * Add ability for users to add wish list destinations
 * Add message board
 

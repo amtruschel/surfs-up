@@ -27,7 +27,7 @@ gem 'news-api'
 gem 'oj'
 gem 'jquery-rails'
 gem 'popper_js'
-gem 'bootstrap', '>= 4.3.1'
+gem 'bootstrap'
 gem 'sprockets-rails'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

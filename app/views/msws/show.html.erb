@@ -1,19 +1,17 @@
 <div class="row d-flex justify-content-center">
   <div class="col-lg-2"></div>
   <div class="col-lg-8 text-center">
-    <a href="http://magicseaweed.com"><img src="https://im-1-uk.msw.ms/msw_powered_by.png"></a>
-    <br></br>
     <p><strong>Spot Name: </strong> <%= @surf_spot.spot_name %></p>
-    <p><strong>Wind: </strong><%= @results['wind']['speed'] %> mph <%= @results['wind']['compassDirection']%></p>
+    <p><strong>Wind: </strong><%= @result['wind']['speed'] %> mph <%= @result['wind']['compassDirection']%></p>
     <p><strong>Swell Rating:</strong>
-      <% @results['solidRating'].to_i.times do |star|%>
+      <% @result['solidRating'].to_i.times do |star|%>
         <img src="http://cdnimages.magicseaweed.com/star_filled.png" />
       <% end %>
-      <% @results['fadedRating'].to_i.times do |star|%>
+      <% @result['fadedRating'].to_i.times do |star|%>
         <img src="http://cdnimages.magicseaweed.com/star_empty.png" />
       <% end %>
     </p>
-    <img src="<%= @results['charts']['swell'] %>" alt="swell" class="img-fluid shadow-sm p-3 mb-5 bg-white rounded">
+    <img src="<%= @result['charts']['swell'] %>" alt="swell" class="img-fluid shadow-sm p-3 mb-5 bg-white rounded">
   </div>
   <div class="col-lg-2"></div>
 </div>

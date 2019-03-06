@@ -41,6 +41,10 @@
               <%= select_tag("surf_spot", options_for_select(@surf_spots), prompt: "Choose your spot...", class: 'dropdown', onchange: "this.form.submit();") %>
             <% end %>
           </div>
+          <div class="row justify-content-center mb-2">
+            <br></br>
+            <a href="http://magicseaweed.com"><img src="https://im-1-uk.msw.ms/msw_powered_by.png"></a>
+          </div>
           <%= yield %>
           <br></br>
         </div>
